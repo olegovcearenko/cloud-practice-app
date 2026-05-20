@@ -432,7 +432,7 @@ DASHBOARD_PAGE = """
 </head>
 <body>
     <header>
-        <h1>Cloud Document Manager</h1>
+        <h1>Cloud Document Manager - CI/CD Test</h1>
         <button onclick="logout()">Logout</button>
     </header>
 
