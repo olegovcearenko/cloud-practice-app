@@ -1,0 +1,33 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'europe-west1-docker.pkg.dev/$PROJECT_ID/cloud-practice-repo/cloud-practice-backend:$SHORT_SHA'
+      - './backend'
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'push'
+      - 'europe-west1-docker.pkg.dev/$PROJECT_ID/cloud-practice-repo/cloud-practice-backend:$SHORT_SHA'
+
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    args:
+      - 'gcloud'
+      - 'run'
+      - 'deploy'
+      - 'cloud-practice-backend'
+      - '--image'
+      - 'europe-west1-docker.pkg.dev/$PROJECT_ID/cloud-practice-repo/cloud-practice-backend:$SHORT_SHA'
+      - '--region'
+      - 'europe-west1'
+      - '--platform'
+      - 'managed'
+      - '--allow-unauthenticated'
+      - '--port'
+      - '5000'
+      - '--set-env-vars'
+      - 'DB_HOST=postgres-service,DB_NAME=cloud_practice_db,DB_USER=postgres,MONGO_DB=cloud_practice_files'
+
+images:
+  - 'europe-west1-docker.pkg.dev/$PROJECT_ID/cloud-practice-repo/cloud-practice-backend:$SHORT_SHA'
