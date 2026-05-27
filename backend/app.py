@@ -445,7 +445,7 @@ DASHBOARD_PAGE = """
             </div>
 
             <input type="file" id="pdf_file" accept="application/pdf">
-            <button class="add-btn" onclick="uploadPDF()">Încarcă PDF</button>
+            <button class="add-btn" onclick="uploadPDF()">Încarcă PDF Oleg Ovcearenco</button>
         </div>
 
         <div class="card">
