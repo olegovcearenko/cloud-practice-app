@@ -282,7 +282,7 @@ LOGIN_PAGE = """
 </head>
 <body>
     <div class="login-box">
-        <h2>Cloud Document Manager CI/CD test</h2>
+        <h2>Cloud Document Manager CI/CD test2</h2>
         <p>Autentificare în sistem</p>
 
         <input id="username" placeholder="Username">
