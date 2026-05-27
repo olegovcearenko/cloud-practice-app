@@ -282,7 +282,7 @@ LOGIN_PAGE = """
 </head>
 <body>
     <div class="login-box">
-        <h2>Cloud Document Manager</h2>
+        <h2>Cloud Document Manager CI/CD test</h2>
         <p>Autentificare în sistem</p>
 
         <input id="username" placeholder="Username">
@@ -445,7 +445,7 @@ DASHBOARD_PAGE = """
             </div>
 
             <input type="file" id="pdf_file" accept="application/pdf">
-            <button class="add-btn" onclick="uploadPDF()">Încarcă PDF Oleg Ovcearenco</button>
+            <button class="add-btn" onclick="uploadPDF()">Încarcă PDF</button>
         </div>
 
         <div class="card">
@@ -470,7 +470,7 @@ DASHBOARD_PAGE = """
             const file = fileInput.files[0];
 
             if (!file) {
-                alert("Selectează un fișier PDF Oleg Ovcearenco");
+                alert("Selectează un fișier PDF");
                 return;
             }
 
