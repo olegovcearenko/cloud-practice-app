@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Show project structure
+      - name: Show project structurer
         run: |
           ls
           ls backend

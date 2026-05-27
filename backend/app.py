@@ -147,7 +147,7 @@ def upload_document():
     )
 
     return jsonify({
-        "message": "PDF document uploaded successfully",
+        "message": "PDF document uploaded successfully by Oleg Ovcearenco",
         "file_id": str(file_id),
         "filename": file.filename
     }), 201
@@ -432,7 +432,7 @@ DASHBOARD_PAGE = """
 </head>
 <body>
     <header>
-        <h1>Cloud Document Manager - CI/CD Test</h1>
+        <h1>Cloud Document Manager - CI/CD Test111</h1>
         <button onclick="logout()">Logout</button>
     </header>
 
@@ -470,7 +470,7 @@ DASHBOARD_PAGE = """
             const file = fileInput.files[0];
 
             if (!file) {
-                alert("Selectează un fișier PDF");
+                alert("Selectează un fișier PDF Oleg Ovcearenco");
                 return;
             }
 
