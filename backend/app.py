@@ -133,7 +133,7 @@ def upload_document():
         return jsonify({"error": "No selected file"}), 400
 
     if not file.filename.lower().endswith(".pdf"):
-        return jsonify({"error": "Only PDF files are allowed"}), 400
+        return jsonify({"error": " files are allowed"}), 400
 
     db = get_mongo_connection()
     fs = gridfs.GridFS(db)
