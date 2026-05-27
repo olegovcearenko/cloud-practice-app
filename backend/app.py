@@ -294,7 +294,7 @@ LOGIN_PAGE = """
 
         <div class="hint">
             Utilizator implicit:<br>
-            <b>admin</b> / <b>admin123</b>
+            <b>admin</b> / <b>admin1234</b>
         </div>
     </div>
 
